@@ -11,14 +11,26 @@
 	      version="2.4">
 
   <display-name>FirstWebApp</display-name>
-  
-  <servlet>
-  <servlet-name>FirstServlet</servlet-name>
-  <servlet-class>com.babel.servlets.FirstServlet </servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  <servlet-name>FirstServlet</servlet-name>
-  <url-pattern>/firstservlet</url-pattern>
-  </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>HelloForm</servlet-name>
+        <servlet-class>com.babel.servlets.HelloForm</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloForm</servlet-name>
+        <url-pattern>/HelloForm</url-pattern>
+    </servlet-mapping>
+ 
+ 
+ 	<servlet>
+        <servlet-name>Greeting</servlet-name>
+        <servlet-class>com.babel.servlets.Greeting</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Greeting</servlet-name>
+        <url-pattern>/Greeting</url-pattern>
+    </servlet-mapping>
+
 </web-app>
