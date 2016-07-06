@@ -20,8 +20,8 @@ public class Greeting extends HttpServlet{
 {
     
 		 PrintWriter out = response.getWriter();
-		 String first_name = request.getParameter("first_name");
-	     String last_name =request.getParameter("last_name");
+		 String username = request.getParameter("username");
+	     String password =request.getParameter("password");
 	     response.setContentType("text/html");
 		
 	     
@@ -30,10 +30,13 @@ public class Greeting extends HttpServlet{
 	      out.println("<title> A very simple servlet example</title>");
 	      out.println("</head>");
 	      out.println("<body>");
-	      out.println("Welcome " + first_name + "-" +last_name);
+	      out.println("Welcome " + username + "-" +password);
 	     //out.println("<h1>"+first_name+"</h1>");
 	     //out.println("<h1>"+last_name+"</h1>");
 	      out.println("</body>");
+	      
+	   //   if((username.equals("admin"))&&(password.equals("admin")))
+	      // {
 	 
 
 	    out.println("</html>");

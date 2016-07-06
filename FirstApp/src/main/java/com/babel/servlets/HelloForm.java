@@ -16,7 +16,7 @@ public void doGet(HttpServletRequest request,HttpServletResponse response)
 	
 
        response.setContentType("text/html");
-	   request.getRequestDispatcher("/WEB-INF/Hello.htm").include(request, response);    
+	   request.getRequestDispatcher("Hello.jsp").include(request, response);    
 	     
  
 	}
